@@ -1,0 +1,37 @@
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+}
+.row{
+    padding: 5px;
+    gap: 50px;
+
+}
+button{
+    width: 50px;
+  height: 50px;
+  border: 1px solid blue;
+    box-sizing: border-box;
+}
+.display {
+    width: 250px;
+    height: 100px;
+    border: 1px solid blue;
+    display: flex;             /* for centering content inside */
+    align-items: center;       /* vertical centering */
+    justify-content: right;    /* content alignment inside display */
+    padding: 10px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Counter </title>
+        <style>
+            .cont{
+                display: flex;
+                flex-direction: row;
+                gap:15px;
+            }
+            #count{ 
+                font-size: 48px;
+                text-align: left;
+                margin-left: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <h1>Counter</h1>
+        <p id="count"></p>
+        <div class="cont">
+            <button onclick="incre()">Increment</button>
+            <button onclick="decre()">Decrement</button>
+            <button id="reset">RESET</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

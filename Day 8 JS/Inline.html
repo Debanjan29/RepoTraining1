@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Inline JS and Internal JS</title>
+
+    </head>
+    <body>
+        <h1 style="color:red; font: Arial">This is heading with color red</h1>
+        <p id="change">Hello World</p>
+        <button onclick="document.getElementById('change').innerHTML='TEXT CHANGEDDD!!!!';">Change Text</button><br>
+        <p>Internal JS</p>
+        <button onclick="cha()">See Magic Switch back</button>
+        <script>
+            function cha(){
+                let word=document.getElementById("change");
+                if(word.innerHTML=='Hello World')
+                {
+                 word.innerHTML='Text Changed using Internal JS';
+                 word.style.color="green";
+                 word.style.fontWeight="Bold";
+                }
+                else{
+                 word.innerHTML='Hello World';
+                 word.style.color="black";
+                 word.style.fontWeight="normal";
+                }
+            }
+        </script>
+    </body>
+
+</html>
